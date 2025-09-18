@@ -8,35 +8,57 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Cream base backgrounds */
+    --background: 45 25% 95%;
+    --foreground: 270 15% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 40 20% 98%;
+    --card-foreground: 270 15% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 40 20% 98%;
+    --popover-foreground: 270 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Purple primary - elegant and luxurious */
+    --primary: 270 80% 35%;
+    --primary-foreground: 45 25% 95%;
+    --primary-glow: 270 70% 55%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Cream secondary */
+    --secondary: 45 30% 88%;
+    --secondary-foreground: 270 20% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Yellow accent - warm and creative */
+    --accent: 50 95% 65%;
+    --accent-foreground: 270 20% 15%;
+    --accent-glow: 50 100% 75%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Muted cream tones */
+    --muted: 40 15% 90%;
+    --muted-foreground: 270 10% 45%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 45 25% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 40 20% 85%;
+    --input: 40 20% 92%;
+    --ring: 270 80% 35%;
 
-    --radius: 0.5rem;
+    /* Premium gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-glow)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--secondary)));
+
+    /* Elegant shadows */
+    --shadow-premium: 0 20px 40px -10px hsl(var(--primary) / 0.15);
+    --shadow-glow: 0 0 30px hsl(var(--accent) / 0.3);
+    --shadow-elegant: 0 8px 25px -5px hsl(var(--primary) / 0.1);
+
+    /* Smooth animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +123,47 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    transition: var(--transition-smooth);
+  }
+}
+
+/* Design System Utilities */
+@layer utilities {
+  /* Button Variants */
+  .btn-hero {
+    @apply bg-gradient-hero text-primary-foreground font-semibold px-8 py-4 rounded-lg shadow-premium hover:shadow-glow transform hover:scale-105 transition-all duration-300;
+  }
+  
+  .btn-accent {
+    @apply bg-accent text-accent-foreground font-medium px-6 py-3 rounded-lg shadow-elegant hover:shadow-glow transform hover:scale-105 transition-all duration-300;
+  }
+
+  /* Card Variants */
+  .card-premium {
+    @apply bg-gradient-card border-0 shadow-premium hover:shadow-glow transition-all duration-300;
+  }
+
+  .card-service {
+    @apply bg-card border border-border/50 shadow-elegant hover:shadow-premium rounded-xl transition-all duration-300 hover:scale-105;
+  }
+
+  /* Text Gradients */
+  .text-gradient-primary {
+    @apply bg-gradient-primary bg-clip-text text-transparent;
+  }
+
+  .text-gradient-accent {
+    @apply bg-gradient-accent bg-clip-text text-transparent;
+  }
+
+  /* Animation Utilities */
+  .animate-on-scroll {
+    @apply opacity-0 translate-y-8;
+    animation: fade-in 0.8s ease-out forwards;
+  }
+
+  /* Hover Effects */
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-glow;
   }
 }
