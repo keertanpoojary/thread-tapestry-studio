@@ -16,34 +16,34 @@ const Services = () => {
   const services = [
     {
       icon: Scissors,
-      title: "Custom Tailoring",
-      description: "Bespoke suits, dresses, and formal wear tailored to your exact measurements and style preferences.",
-      features: ["Perfect fit guarantee", "Premium fabrics", "Multiple fittings", "Style consultation"],
-      price: "Starting at $299",
+      title: "Custom Stitching",
+      description: "Suit, kurta, lehenga, saree blouse - sabka perfect fitting! Aapke budget mein best quality tailoring.",
+      features: ["Perfect fit guarantee", "Quality fabric available", "Multiple fitting free", "Design consultation"],
+      price: "₹299 se shuru",
       popular: true
     },
     {
       icon: Shirt,
-      title: "Alterations & Repairs",
-      description: "Professional alterations for all types of clothing, from hemming to major reconstructions.",
-      features: ["Same-day service", "All garment types", "Invisible repairs", "Size adjustments"],
-      price: "Starting at $25",
+      title: "Alteration & Repair",
+      description: "Purane kapde ko naya banaiye! Fitting loose-tight, length kam-zyada, sab kuch possible hai.",
+      features: ["Same day service", "All types ke kapde", "Invisible mending", "Size adjustment"],
+      price: "₹99 se shuru",
       popular: false
     },
     {
       icon: Sparkles,
-      title: "Laundry & Care",
-      description: "Premium laundry services with pickup and delivery, including dry cleaning and special care.",
-      features: ["Pickup & delivery", "Eco-friendly products", "Delicate handling", "Express service"],
-      price: "Starting at $15",
+      title: "Dhulai & Press",
+      description: "Ghar se pickup aur delivery ke saath premium dhulai service. Dry cleaning bhi available.",
+      features: ["Free pickup & delivery", "Gentle wash guaranteed", "Express service", "Affordable rates"],
+      price: "₹49 se shuru",
       popular: false
     },
     {
       icon: Package,
-      title: "Wardrobe Consultation",
-      description: "Personal styling and wardrobe organization services to maximize your clothing potential.",
-      features: ["Style assessment", "Color analysis", "Shopping guidance", "Organization tips"],
-      price: "Starting at $150",
+      title: "Style Consultation",
+      description: "Apne existing wardrobe ko maximize kaise kare? Fashion tips aur styling advice bilkul free!",
+      features: ["Personal styling tips", "Color matching", "Shopping guidance", "Wardrobe planning"],
+      price: "₹199 se shuru",
       popular: false
     }
   ];

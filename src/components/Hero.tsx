@@ -31,17 +31,17 @@ const Hero = () => {
               </div>
               
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                <span className="text-foreground">Custom </span>
-                <span className="text-gradient-primary">Tailoring</span>
+                <span className="text-foreground">Expert </span>
+                <span className="text-gradient-primary">Darzi</span>
                 <br />
-                <span className="text-foreground">At Your </span>
-                <span className="text-gradient-accent">Doorstep</span>
+                <span className="text-foreground">Ghar Par </span>
+                <span className="text-gradient-accent">Service</span>
               </h1>
               
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                Experience premium home-based tailoring services with personalized attention. 
-                From custom suits to clothing repairs, we bring professional craftsmanship 
-                directly to your home.
+                Mumbai ki sabse affordable aur quality darzi service! Suit, shirt, saree blouse 
+                se lekar har type ka stitching work. Ghar baithe measurement aur fitting - 
+                sirf ₹99 se shuru!
               </p>
             </div>
 
@@ -120,7 +120,7 @@ const Hero = () => {
               
               <div className="mt-8 p-4 bg-accent/10 rounded-lg border border-accent/20">
                 <p className="text-sm text-center">
-                  <span className="font-semibold text-accent">Free consultation</span> for all first-time customers
+                  <span className="font-semibold text-accent">Free ghar visit</span> - Pehli baar customers ke liye bilkul free!
                 </p>
               </div>
             </div>

@@ -16,27 +16,27 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Phone,
-      title: "Call Us",
-      info: "(555) 123-4567",
-      subtext: "Available 9 AM - 7 PM"
+      title: "Call Kare",
+      info: "+91 98765 43210",
+      subtext: "Subah 9 se Shaam 7 tak"
     },
     {
       icon: Mail,
-      title: "Email Us",
-      info: "hello@tailorcraft.com",
-      subtext: "We reply within 2 hours"
+      title: "Email Kare",
+      info: "priya.darzi@gmail.com",
+      subtext: "2 ghante mein reply guaranteed"
     },
     {
       icon: MapPin,
       title: "Service Area",
-      info: "Downtown & Suburbs",
-      subtext: "15-mile radius coverage"
+      info: "Mumbai & Thane",
+      subtext: "20 km radius mein free visit"
     },
     {
       icon: Clock,
-      title: "Business Hours",
+      title: "Working Hours",
       info: "Mon - Sat: 9 AM - 7 PM",
-      subtext: "Sunday: By appointment"
+      subtext: "Sunday: Emergency work only"
     }
   ];
 
@@ -202,18 +202,18 @@ const Contact = () => {
               Currently providing home services within a 15-mile radius of downtown
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 text-sm">
-              <span>Downtown</span>
-              <span>Midtown</span>
-              <span>Westside</span>
-              <span>Eastwood</span>
-              <span>Riverside</span>
-              <span>Hillcrest</span>
-              <span>Oak Park</span>
-              <span>Pine Valley</span>
-              <span>Sunset Hills</span>
-              <span>Garden District</span>
-              <span>University Area</span>
-              <span>Business District</span>
+              <span>Andheri</span>
+              <span>Bandra</span>
+              <span>Juhu</span>
+              <span>Malad</span>
+              <span>Borivali</span>
+              <span>Kandivali</span>
+              <span>Thane</span>
+              <span>Ghatkopar</span>
+              <span>Powai</span>
+              <span>Vikhroli</span>
+              <span>Kurla</span>
+              <span>Chembur</span>
             </div>
             <p className="text-xs text-muted-foreground mt-4">
               Don't see your area? Contact us - we may be able to arrange special service.

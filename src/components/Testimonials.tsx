@@ -5,51 +5,51 @@ import customerImage from '@/assets/customer-1.jpg';
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Jennifer Wilson",
-      role: "Marketing Executive",
+      name: "Sunita Gupta",
+      role: "Working Professional",
       image: customerImage,
       rating: 5,
-      text: "Sarah transformed my old business suits into perfectly fitted pieces that make me feel confident every day. The home service was incredibly convenient, and her attention to detail is unmatched.",
+      text: "Priya didi ne mere purane office suits ko bilkul naya bana diya! Ghar par fitting lene aati hai aur price bhi reasonable hai. Ab main confident feel karti hun office mein.",
       service: "Alterations & Fitting"
     },
     {
-      name: "Michael Chen",
-      role: "Wedding Groom",
+      name: "Rohit & Kavya",
+      role: "Newly Married Couple",
       image: customerImage,
       rating: 5,
-      text: "For our wedding, Sarah created the most beautiful custom suit. She came to our home multiple times for fittings and made sure everything was perfect. The quality exceeded our expectations!",
-      service: "Custom Tailoring"
+      text: "Shaadi ke liye perfect lehenga aur sherwaani banwaya! Multiple fittings free mein, quality amazing! Budget mein itni achhi service nahi milti kahin.",
+      service: "Custom Stitching"
     },
     {
-      name: "Lisa Rodriguez",
-      role: "Busy Professional",
+      name: "Meera Joshi",
+      role: "Busy Mom",
       image: customerImage,
       rating: 5,
-      text: "The laundry pickup and delivery service has been a game-changer for my schedule. Sarah takes such good care of my clothes, and they always come back looking brand new. Highly recommend!",
+      text: "Bachon ke school uniform se lekar family ke saare kapde - sab kuch ghar baithe ho jaata hai! Pickup-delivery free, aur price bahut reasonable. Time aur paisa dono bach jaata hai!",
       service: "Laundry Services"
     },
     {
-      name: "David Thompson",
-      role: "Businessman",
+      name: "Amit Sharma",
+      role: "Small Business Owner",
       image: customerImage,
       rating: 5,
-      text: "Sarah's wardrobe consultation opened my eyes to so many possibilities with my existing clothes. She helped me create dozens of new outfit combinations I never thought of. Amazing value!",
-      service: "Wardrobe Consultation"
+      text: "Office presentation ke liye perfect shirt chahiye tha. Priya ne existing wardrobe dekh kar styling tips diye - paisa bachaya aur look bhi upgrade ho gaya!",
+      service: "Style Consultation"
     },
     {
-      name: "Emily Parker",
-      role: "Teacher",
+      name: "Pooja Mishra",
+      role: "College Student",
       image: customerImage,
       rating: 5,
-      text: "As a teacher on a budget, I thought custom tailoring was out of reach. Sarah's affordable prices and payment plans made it possible for me to have beautifully fitted professional clothes.",
-      service: "Custom Tailoring"
+      text: "Student budget mein custom kurti banwani thi. EMI option bhi diya! Quality itni achhi hai ki branded store wale se bhi better lagi. Highly recommend for youngsters!",
+      service: "Custom Stitching"
     },
     {
-      name: "Robert Kim",
-      role: "Retiree",
+      name: "Rajesh Uncle",
+      role: "Senior Citizen",
       image: customerImage,
       rating: 5,
-      text: "After losing weight, none of my clothes fit properly. Sarah came to my home and altered everything perfectly. She's patient, professional, and truly cares about her customers' satisfaction.",
+      text: "Age ke saath size change ho gaya tha. Priya beta ghar aakar saare kapde adjust kar diya. Bahut patient hai aur senior citizens ke saath pyaar se baat karti hai.",
       service: "Alterations"
     }
   ];

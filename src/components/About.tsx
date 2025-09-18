@@ -60,26 +60,26 @@ const About = () => {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-gradient-primary">
-                Sarah Martinez
+                Priya Sharma
               </h3>
               
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Welcome to TailorCraft! I'm Sarah, and I've been passionate about the art of tailoring 
-                  for over 15 years. What started as a childhood fascination with my grandmother's sewing 
-                  machine has evolved into a thriving home-based business that serves families across the city.
+                  Namaste! Main Priya hun aur pichhle 15 saal se tailoring ka kaam kar rahi hun. 
+                  Bachpan mein mummy ki sewing machine dekhke shuru hua tha, aaj Mumbai ke har ghar 
+                  mein humari service pahunch rahi hai.
                 </p>
                 
                 <p>
-                  I believe that every person deserves clothing that fits perfectly and makes them feel 
-                  confident. That's why I brought my services directly to your home - because I understand 
-                  that your time is valuable, and comfort matters when discussing your personal style needs.
+                  Mera vishwas hai ki har insaan ko perfectly fitting clothes milne chahiye, 
+                  chahe budget kitna bhi ho. Isliye humne ghar-ghar service shuru ki - kyunki 
+                  aapka time precious hai aur comfort mein baat karne se better fitting milti hai.
                 </p>
                 
                 <p>
-                  From custom wedding dresses to everyday alterations, from business suits to casual wear, 
-                  I approach each project with the same dedication to craftsmanship and attention to detail 
-                  that my mentors taught me years ago.
+                  Shaadi ke lehenga se lekar daily wear shirt tak, office suit se lekar bachon 
+                  ke school uniform tak - har kaam mein same dedication aur quality ka promise. 
+                  Affordable rates mein premium service - yehi hai humara motto!
                 </p>
               </div>
             </div>
@@ -100,17 +100,17 @@ const About = () => {
             <Card className="card-premium p-8 text-center">
               <div className="w-48 h-48 mx-auto mb-6 bg-gradient-primary rounded-full flex items-center justify-center">
                 <div className="w-40 h-40 bg-primary-foreground rounded-full flex items-center justify-center">
-                  <span className="text-6xl font-bold text-primary">SM</span>
+                  <span className="text-6xl font-bold text-primary">PS</span>
                 </div>
               </div>
               
-              <h4 className="text-2xl font-bold mb-2">Sarah Martinez</h4>
-              <p className="text-accent font-semibold mb-4">Master Tailor & Entrepreneur</p>
+              <h4 className="text-2xl font-bold mb-2">Priya Sharma</h4>
+              <p className="text-accent font-semibold mb-4">Expert Darzi & Home Service Specialist</p>
               
               <div className="space-y-2 text-sm text-muted-foreground">
-                <p>Certified Master Tailor</p>
-                <p>Fashion Design Graduate</p>
-                <p>Home Service Specialist</p>
+                <p>15+ Years Experience</p>
+                <p>1000+ Happy Customers</p>
+                <p>Affordable Premium Service</p>
               </div>
             </Card>
           </div>
