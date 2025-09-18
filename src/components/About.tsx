@@ -65,21 +65,21 @@ const About = () => {
               
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Namaste! Main Priya hun aur pichhle 15 saal se tailoring ka kaam kar rahi hun. 
-                  Bachpan mein mummy ki sewing machine dekhke shuru hua tha, aaj Mumbai ke har ghar 
-                  mein humari service pahunch rahi hai.
+                  Hello! I'm Priya and I've been working in tailoring for the past 15 years. 
+                  What started by watching my mother's sewing machine in childhood has now reached 
+                  every home in Mumbai with our quality services.
                 </p>
                 
                 <p>
-                  Mera vishwas hai ki har insaan ko perfectly fitting clothes milne chahiye, 
-                  chahe budget kitna bhi ho. Isliye humne ghar-ghar service shuru ki - kyunki 
-                  aapka time precious hai aur comfort mein baat karne se better fitting milti hai.
+                  I believe that everyone should get perfectly fitting clothes, no matter what their budget is. 
+                  That's why we started home-to-home service - because your time is precious and talking 
+                  in comfort gives better fitting results.
                 </p>
                 
                 <p>
-                  Shaadi ke lehenga se lekar daily wear shirt tak, office suit se lekar bachon 
-                  ke school uniform tak - har kaam mein same dedication aur quality ka promise. 
-                  Affordable rates mein premium service - yehi hai humara motto!
+                  From wedding lehengas to daily wear shirts, office suits to children's school uniforms - 
+                  every work gets the same dedication and quality promise. Affordable rates with premium 
+                  service - this is our motto!
                 </p>
               </div>
             </div>
@@ -105,7 +105,7 @@ const About = () => {
               </div>
               
               <h4 className="text-2xl font-bold mb-2">Priya Sharma</h4>
-              <p className="text-accent font-semibold mb-4">Expert Darzi & Home Service Specialist</p>
+              <p className="text-accent font-semibold mb-4">Expert Tailor & Home Service Specialist</p>
               
               <div className="space-y-2 text-sm text-muted-foreground">
                 <p>15+ Years Experience</p>

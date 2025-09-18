@@ -9,7 +9,7 @@ const Testimonials = () => {
       role: "Working Professional",
       image: customerImage,
       rating: 5,
-      text: "Priya didi ne mere purane office suits ko bilkul naya bana diya! Ghar par fitting lene aati hai aur price bhi reasonable hai. Ab main confident feel karti hun office mein.",
+      text: "Priya made my old office suits look completely new! She comes home for fittings and the prices are very reasonable. Now I feel confident at the office.",
       service: "Alterations & Fitting"
     },
     {
@@ -17,7 +17,7 @@ const Testimonials = () => {
       role: "Newly Married Couple",
       image: customerImage,
       rating: 5,
-      text: "Shaadi ke liye perfect lehenga aur sherwaani banwaya! Multiple fittings free mein, quality amazing! Budget mein itni achhi service nahi milti kahin.",
+      text: "Got perfect lehenga and sherwani made for our wedding! Multiple fittings were free and quality was amazing! You can't get such good service within budget anywhere else.",
       service: "Custom Stitching"
     },
     {
@@ -25,7 +25,7 @@ const Testimonials = () => {
       role: "Busy Mom",
       image: customerImage,
       rating: 5,
-      text: "Bachon ke school uniform se lekar family ke saare kapde - sab kuch ghar baithe ho jaata hai! Pickup-delivery free, aur price bahut reasonable. Time aur paisa dono bach jaata hai!",
+      text: "From children's school uniforms to family clothes - everything gets done sitting at home! Free pickup-delivery and very reasonable prices. Saves both time and money!",
       service: "Laundry Services"
     },
     {
@@ -33,7 +33,7 @@ const Testimonials = () => {
       role: "Small Business Owner",
       image: customerImage,
       rating: 5,
-      text: "Office presentation ke liye perfect shirt chahiye tha. Priya ne existing wardrobe dekh kar styling tips diye - paisa bachaya aur look bhi upgrade ho gaya!",
+      text: "Needed a perfect shirt for office presentation. Priya gave styling tips after seeing my existing wardrobe - saved money and upgraded my look too!",
       service: "Style Consultation"
     },
     {
@@ -41,7 +41,7 @@ const Testimonials = () => {
       role: "College Student",
       image: customerImage,
       rating: 5,
-      text: "Student budget mein custom kurti banwani thi. EMI option bhi diya! Quality itni achhi hai ki branded store wale se bhi better lagi. Highly recommend for youngsters!",
+      text: "Wanted to get custom kurti made on student budget. Even gave EMI option! Quality is so good it looked better than branded store clothes. Highly recommend for young people!",
       service: "Custom Stitching"
     },
     {
@@ -49,7 +49,7 @@ const Testimonials = () => {
       role: "Senior Citizen",
       image: customerImage,
       rating: 5,
-      text: "Age ke saath size change ho gaya tha. Priya beta ghar aakar saare kapde adjust kar diya. Bahut patient hai aur senior citizens ke saath pyaar se baat karti hai.",
+      text: "My size had changed with age. Priya came home and adjusted all my clothes. She's very patient and talks lovingly with senior citizens.",
       service: "Alterations"
     }
   ];

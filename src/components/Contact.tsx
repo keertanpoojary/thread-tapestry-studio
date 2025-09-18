@@ -16,21 +16,21 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Phone,
-      title: "Call Kare",
+      title: "Call Us",
       info: "+91 98765 43210",
-      subtext: "Subah 9 se Shaam 7 tak"
+      subtext: "Available 9 AM to 7 PM"
     },
     {
       icon: Mail,
-      title: "Email Kare",
-      info: "priya.darzi@gmail.com",
-      subtext: "2 ghante mein reply guaranteed"
+      title: "Email Us",
+      info: "priya.tailor@gmail.com",
+      subtext: "Reply guaranteed within 2 hours"
     },
     {
       icon: MapPin,
       title: "Service Area",
       info: "Mumbai & Thane",
-      subtext: "20 km radius mein free visit"
+      subtext: "Free visit within 20 km radius"
     },
     {
       icon: Clock,

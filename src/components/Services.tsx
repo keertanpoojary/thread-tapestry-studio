@@ -17,33 +17,33 @@ const Services = () => {
     {
       icon: Scissors,
       title: "Custom Stitching",
-      description: "Suit, kurta, lehenga, saree blouse - sabka perfect fitting! Aapke budget mein best quality tailoring.",
+      description: "Suits, kurtas, lehengas, saree blouses - perfect fitting for all! Best quality tailoring within your budget.",
       features: ["Perfect fit guarantee", "Quality fabric available", "Multiple fitting free", "Design consultation"],
-      price: "₹299 se shuru",
+      price: "Starting at ₹299",
       popular: true
     },
     {
       icon: Shirt,
       title: "Alteration & Repair",
-      description: "Purane kapde ko naya banaiye! Fitting loose-tight, length kam-zyada, sab kuch possible hai.",
-      features: ["Same day service", "All types ke kapde", "Invisible mending", "Size adjustment"],
-      price: "₹99 se shuru",
+      description: "Transform your old clothes into new ones! Loose-tight fitting, length adjustments - everything is possible.",
+      features: ["Same day service", "All types of garments", "Invisible mending", "Size adjustment"],
+      price: "Starting at ₹99",
       popular: false
     },
     {
       icon: Sparkles,
-      title: "Dhulai & Press",
-      description: "Ghar se pickup aur delivery ke saath premium dhulai service. Dry cleaning bhi available.",
+      title: "Laundry & Press",
+      description: "Premium washing service with home pickup and delivery. Dry cleaning also available at affordable rates.",
       features: ["Free pickup & delivery", "Gentle wash guaranteed", "Express service", "Affordable rates"],
-      price: "₹49 se shuru",
+      price: "Starting at ₹49",
       popular: false
     },
     {
       icon: Package,
       title: "Style Consultation",
-      description: "Apne existing wardrobe ko maximize kaise kare? Fashion tips aur styling advice bilkul free!",
+      description: "How to maximize your existing wardrobe? Fashion tips and styling advice absolutely free with any service!",
       features: ["Personal styling tips", "Color matching", "Shopping guidance", "Wardrobe planning"],
-      price: "₹199 se shuru",
+      price: "Starting at ₹199",
       popular: false
     }
   ];
