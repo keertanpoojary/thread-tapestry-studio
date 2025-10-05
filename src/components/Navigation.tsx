@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Scissors, Phone, Mail } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,9 +21,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center shadow-elegant">
-              <Scissors className="w-6 h-6 text-primary-foreground" />
-            </div>
+            <img 
+              src={logo} 
+              alt="MyFitTailor Logo" 
+              className="h-16 w-16 object-contain"
+            />
             <div>
               <h1 className="text-xl font-bold text-gradient-primary">MyFitTailor</h1>
               <p className="text-xs text-muted-foreground">Home Services</p>
