@@ -31,7 +31,7 @@ const Footer = () => {
                 <Scissors className="w-6 h-6 text-accent-foreground" />
               </div>
               <div>
-                <h3 className="text-xl font-bold">TailorCraft</h3>
+                <h3 className="text-xl font-bold">MyFitTailor</h3>
                 <p className="text-xs text-primary-foreground/70">Home Services</p>
               </div>
             </div>
@@ -94,7 +94,7 @@ const Footer = () => {
               
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-accent flex-shrink-0" />
-                <span className="text-primary-foreground/80">hello@tailorcraft.com</span>
+                <span className="text-primary-foreground/80">hello@myfittailor.com</span>
               </div>
               
               <div className="flex items-center space-x-3">
@@ -121,7 +121,7 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-primary-foreground/60 text-sm">
-              © {currentYear} TailorCraft Home Services. All rights reserved.
+              © {currentYear} MyFitTailor Home Services. All rights reserved.
             </div>
             
             <div className="flex space-x-6 text-sm">

@@ -24,7 +24,7 @@ const Navigation = () => {
               <Scissors className="w-6 h-6 text-primary-foreground" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gradient-primary">TailorCraft</h1>
+              <h1 className="text-xl font-bold text-gradient-primary">MyFitTailor</h1>
               <p className="text-xs text-muted-foreground">Home Services</p>
             </div>
           </div>
