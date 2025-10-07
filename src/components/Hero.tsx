@@ -1,9 +1,15 @@
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Scissors, Clock, Home, Star } from 'lucide-react';
 import heroImage from '@/assets/hero-tailoring.jpg';
+import BookingDialog from './BookingDialog';
 
 const Hero = () => {
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const [isServiceOpen, setIsServiceOpen] = useState(false);
+
   return (
+    <>
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
@@ -46,10 +52,17 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="btn-hero text-lg px-8 py-4">
+              <Button 
+                className="btn-hero text-lg px-8 py-4"
+                onClick={() => setIsBookingOpen(true)}
+              >
                 Book Home Visit
               </Button>
-              <Button variant="outline" className="text-lg px-8 py-4 border-2 hover:bg-secondary">
+              <Button 
+                variant="outline" 
+                className="text-lg px-8 py-4 border-2 hover:bg-secondary"
+                onClick={() => setIsServiceOpen(true)}
+              >
                 View Services
               </Button>
             </div>
@@ -126,7 +139,20 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      <BookingDialog 
+        open={isBookingOpen} 
+        onOpenChange={setIsBookingOpen}
+        bookingType="home_visit"
+      />
+      
+      <BookingDialog 
+        open={isServiceOpen} 
+        onOpenChange={setIsServiceOpen}
+        bookingType="service"
+      />
     </section>
+    </>
   );
 };
 

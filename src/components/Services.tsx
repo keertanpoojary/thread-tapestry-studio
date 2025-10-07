@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { 
@@ -11,8 +12,17 @@ import {
   CheckCircle
 } from 'lucide-react';
 import servicesImage from '@/assets/services-showcase.jpg';
+import BookingDialog from './BookingDialog';
 
 const Services = () => {
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState('');
+
+  const handleBookService = (serviceName: string) => {
+    setSelectedService(serviceName);
+    setIsBookingOpen(true);
+  };
+
   const services = [
     {
       icon: Scissors,
@@ -107,7 +117,10 @@ const Services = () => {
                   <span className="text-2xl font-bold text-gradient-primary">{service.price}</span>
                 </div>
                 
-                <Button className="w-full btn-accent group">
+                <Button 
+                  className="w-full btn-accent group"
+                  onClick={() => handleBookService(service.title)}
+                >
                   Book Service
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -175,6 +188,13 @@ const Services = () => {
           </div>
         </div>
       </div>
+
+      <BookingDialog 
+        open={isBookingOpen} 
+        onOpenChange={setIsBookingOpen}
+        bookingType="service"
+        serviceType={selectedService}
+      />
     </section>
   );
 };
