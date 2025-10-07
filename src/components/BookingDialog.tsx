@@ -16,16 +16,17 @@ interface BookingDialogProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   bookingType: 'home_visit' | 'service';
-  serviceType?: string;
+  serviceName?: string;
+  servicePrice?: string;
 }
 
-const BookingDialog = ({ open, onOpenChange, bookingType, serviceType = '' }: BookingDialogProps) => {
+const BookingDialog = ({ open, onOpenChange, bookingType, serviceName = '', servicePrice = '' }: BookingDialogProps) => {
   const [formData, setFormData] = useState({
     customer_name: '',
     customer_email: '',
     customer_phone: '',
     customer_address: '',
-    service_type: serviceType,
+    service_type: serviceName,
     additional_notes: '',
   });
   const [selectedDate, setSelectedDate] = useState<Date>();
@@ -56,7 +57,7 @@ const BookingDialog = ({ open, onOpenChange, bookingType, serviceType = '' }: Bo
         customer_email: '',
         customer_phone: '',
         customer_address: '',
-        service_type: serviceType,
+        service_type: serviceName,
         additional_notes: '',
       });
       setSelectedDate(undefined);
@@ -82,6 +83,22 @@ const BookingDialog = ({ open, onOpenChange, bookingType, serviceType = '' }: Bo
           <DialogDescription>
             Fill in your details and we'll get back to you shortly.
           </DialogDescription>
+          {bookingType === 'service' && serviceName && (
+            <div className="mt-4 p-4 bg-secondary/50 rounded-lg border border-border">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm text-muted-foreground">Selected Service</p>
+                  <p className="font-semibold text-foreground">{serviceName}</p>
+                </div>
+                {servicePrice && (
+                  <div className="text-right">
+                    <p className="text-sm text-muted-foreground">Price</p>
+                    <p className="font-bold text-lg text-gradient-primary">{servicePrice}</p>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
         </DialogHeader>
 
         <form onSubmit={handleSubmit} className="space-y-4">

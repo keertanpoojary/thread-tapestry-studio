@@ -16,10 +16,10 @@ import BookingDialog from './BookingDialog';
 
 const Services = () => {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
-  const [selectedService, setSelectedService] = useState('');
+  const [selectedService, setSelectedService] = useState<{ name: string; price: string } | null>(null);
 
-  const handleBookService = (serviceName: string) => {
-    setSelectedService(serviceName);
+  const handleBookService = (serviceName: string, servicePrice: string) => {
+    setSelectedService({ name: serviceName, price: servicePrice });
     setIsBookingOpen(true);
   };
 
@@ -119,7 +119,7 @@ const Services = () => {
                 
                 <Button 
                   className="w-full btn-accent group"
-                  onClick={() => handleBookService(service.title)}
+                  onClick={() => handleBookService(service.title, service.price)}
                 >
                   Book Service
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -193,7 +193,8 @@ const Services = () => {
         open={isBookingOpen} 
         onOpenChange={setIsBookingOpen}
         bookingType="service"
-        serviceType={selectedService}
+        serviceName={selectedService?.name}
+        servicePrice={selectedService?.price}
       />
     </section>
   );
